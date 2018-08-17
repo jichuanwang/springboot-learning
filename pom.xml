@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>springboot-learnig-web</module>
+    <module>springboot-learning-web</module>
     <module>springboot-learning-service</module>
   </modules>
 

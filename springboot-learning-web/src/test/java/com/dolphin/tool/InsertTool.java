@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Base64;
 
 /**
  * @author jichuan.wang
@@ -25,5 +26,11 @@ public class InsertTool {
             System.out.println(result);
         }
         Thread.currentThread().sleep(100);
+    }
+
+    @Test
+    public void test01(){
+        byte[] aa = Base64.getEncoder().encode("http://www.jd.com".getBytes());
+        System.out.println(new String(aa));
     }
 }

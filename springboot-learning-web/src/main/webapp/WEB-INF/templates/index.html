@@ -6,5 +6,34 @@
 </head>
 <body>
 hello world!!!!
+
+<div id="content">
+    <li v-for="(book,index) in books"  v-bind:id="index">
+        {{book}}
+    </li>
+
+    <todo-item v-for="todo in todoList" v-bind:todo="todo" v-bind:key="todo.key"></todo-item>
+</div>
 </body>
+
+<script type="text/javascript" src="/static/vue.js"></script>
+<script>
+    Vue.component('todo-item',{
+        props:['todo'],
+        template:"<li>{{todo.text}}</li>"
+    });
+    var app = new Vue({
+        el:"#content",
+        data:{
+            books:["java in action","javascript in action2"],
+            todoList:[{"key":1,"text":"吃饭"}]
+        },
+        created:function(){
+            console.log("created successfull")
+        }
+    });
+
+    console.info(Vue.config.keyCodes)
+
+</script>
 </html>

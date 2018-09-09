@@ -48,8 +48,8 @@ public class ZKLearn {
 
     @Test
     public void testGet() throws Exception{
-      /*  String path =zooKeeper.getData("/zkLearn", ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        System.out.println(path);*/
+        String path =new String(zooKeeper.getData("/zkLearn", true,null));
+        System.out.println(path);
     }
 
     @Test

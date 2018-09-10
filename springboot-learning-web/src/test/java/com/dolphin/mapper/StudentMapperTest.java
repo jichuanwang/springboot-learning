@@ -18,8 +18,11 @@ public class StudentMapperTest extends BaseTest {
 
     @Test
     public void testFind(){
-        Student student = studentMapper.selectById(7);
-        System.out.println(student);
+        for(int i=0;i<100000;i++){
+
+            Student student = studentMapper.selectById(7);
+            System.out.println(student);
+        }
     }
 
 }

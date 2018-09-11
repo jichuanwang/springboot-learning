@@ -10,15 +10,15 @@ import java.lang.reflect.Method;
  */
 public class DynamicProxy implements InvocationHandler {
 
-/*    private Object subject;
+    private Object subject;
 
     public DynamicProxy(Object o){
         this.subject = o;
-    }*/
+    }
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("before invoke");
-        Object o = method.invoke(proxy,args);
+        Object o = method.invoke(subject,args);
         System.out.println("after invoke");
         return o;
     }

@@ -1,6 +1,7 @@
 package com.dolphin.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -15,7 +16,7 @@ import org.jboss.netty.channel.ChildChannelStateEvent;
  */
 public class TimeServer {
 
-    public void bind(int port){
+    public void bind(int port) throws Exception{
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
@@ -23,6 +24,7 @@ public class TimeServer {
         b.group(bossGroup,workerGroup).channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_BACKLOG,1024)
                 .childHandler(new ChildChannelHandler());
+        ChannelFuture f = b.bind(port).sync();
     }
 
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel>{

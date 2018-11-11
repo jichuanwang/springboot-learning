@@ -10,8 +10,10 @@ import org.springframework.context.annotation.ImportResource;
  * Description:
  */
 @Configuration
-@ImportResource("classpath:spring-elastic-job.xml")
+//@ImportResource("classpath:spring-elastic-job.xml")
 public class ElasticJobConfig {
 
-
+    public static void main(String[] args) {
+        System.out.println("hello world!!!");
+    }
 }

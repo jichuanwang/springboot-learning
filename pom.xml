@@ -20,7 +20,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+        <!--<spring.boot.version>1.5.2.RELEASE</spring.boot.version>-->
+        <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
     </properties>
 
     <dependencies>
@@ -90,27 +91,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.xstore.erpstock</groupId>
-            <artifactId>xstore-erpstock-jsf-provider</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.xstore.stk.api</groupId>
-            <artifactId>xstore-stk-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jd.jr.cis</groupId>
-            <artifactId>cis-user-export</artifactId>
-            <version>1.2.7</version>
-            <!--<exclusions>
-                <exclusion>
-                    <groupId>org.jboss.resteasy</groupId>
-                    <artifactId>jaxrs-api</artifactId>
-                </exclusion>
-            </exclusions>-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
 
 

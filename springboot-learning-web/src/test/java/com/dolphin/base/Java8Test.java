@@ -3,11 +3,11 @@ package com.dolphin.base;
 import lombok.Data;
 import lombok.Getter;
 import org.junit.Test;
+import java.util.Hashtable;
 
 import javax.jnlp.IntegrationService;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.*;
 import java.util.function.Function;
 
 /**
@@ -56,26 +56,26 @@ public class Java8Test {
         }
     }
 
+    public static void main(String[] args) {
+        Map map = new HashMap();
+        System.out.println(111);
+        map.put(null,null);
+        map.put(null,null);
+        map.put(null,null);
+        map.put(null,null);
+        map.put(null,null);
+        map.put(1,null);
+        map.put(2,null);
+        System.out.println(map.entrySet());
+
+        Map map1 = new Hashtable<>();
+        map1.put(null,1);
+        map1.put(2,null);
+        System.out.println(map1.size());
+    }
+
     @Test
     public void test01(){
-      /*  RateTypeEnum rateTypeEnum = RateTypeEnum.getRateTypeEnumByCode(222);
-        switch (rateTypeEnum) {
-            case CHANNEL_FIXED:
-            case CHANNEL_LADDER:
 
-                break;
-            case STORE_FIXED:
-
-                break;
-            case STORE_CATEGORY_LADDER:
-
-                break;
-            default:
-//                throw new CommissionException("不合法的扣点类型");
-        }*/
-      Integer a = null;
-      if(a == 2){
-
-      }
     }
 }

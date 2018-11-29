@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-learning-web</module>
         <module>springboot-learning-service</module>
+        <module>springboot-learning-job</module>
     </modules>
 
     <name>springboot-learning</name>

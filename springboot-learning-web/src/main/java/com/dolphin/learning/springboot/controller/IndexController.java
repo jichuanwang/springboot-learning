@@ -24,4 +24,8 @@ public class IndexController {
         System.out.println(Thread.currentThread().getName());
         return "index";
     }
+    @RequestMapping("/vue_first")
+    public String vueFirst(){
+        return "vue_first";
+    }
 }

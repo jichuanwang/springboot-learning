@@ -34,13 +34,12 @@ public class QuickSort {
                 }
                 if(i<j){
                     data[i++] = data[j];
-                }
-
-                while (i<j && data[i]<=baseValue){
-                    i++;
-                }
-                if(i<j){
-                    data[j--] = data[i];
+                    while (i<j && data[i]<=baseValue){
+                        i++;
+                    }
+                    if(i<j){
+                        data[j--] = data[i];
+                    }
                 }
 
             }

@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-learning-web</module>
         <module>springboot-learning-service</module>
+        <module>springboot-learning-job</module>
     </modules>
 
     <name>springboot-learning</name>
@@ -64,11 +65,25 @@
             <version>2.1.5</version>
         </dependency>
 
-       <!-- <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-recipes</artifactId>
-            <version>2.5.0</version>
-        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.51</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jd.xstore.agreement</groupId>
+            <artifactId>xstore-agreement-center-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+        <!-- <dependency>
+             <groupId>org.apache.curator</groupId>
+             <artifactId>curator-recipes</artifactId>
+             <version>2.5.0</version>
+         </dependency>-->
 
         <dependency>
             <groupId>org.msgpack</groupId>

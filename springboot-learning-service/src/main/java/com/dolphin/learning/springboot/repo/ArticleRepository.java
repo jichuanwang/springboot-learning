@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 /**
  * Created by wangjichuan on 2018/9/21.
  */
-@Service
-public interface ArticleRepository extends ElasticsearchRepository<Article,Long> {
+//@Service
+public interface ArticleRepository /*extends ElasticsearchRepository<Article,Long>*/ {
 
 
 }

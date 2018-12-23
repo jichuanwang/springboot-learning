@@ -13,15 +13,14 @@ import java.util.Optional;
  */
 public class ArticleRespositoryTest extends BaseTest {
 
-    @Autowired
     private ArticleRepository articleRepository;
 
-    /**
+/*    *//**
      * 查询
-     */
+     *//*
     @Test
     public void test(){
         Optional<Article> article = articleRepository.findById(1L);
         System.out.println(article);
-    }
+    }*/
 }

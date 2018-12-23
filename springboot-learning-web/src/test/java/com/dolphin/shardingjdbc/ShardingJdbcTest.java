@@ -1,21 +1,5 @@
 package com.dolphin.shardingjdbc;
 
-import io.shardingsphere.api.config.ShardingRuleConfiguration;
-import io.shardingsphere.api.config.TableRuleConfiguration;
-import io.shardingsphere.api.config.strategy.InlineShardingStrategyConfiguration;
-import io.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
-import org.apache.commons.dbcp.BasicDataSource;
-import org.junit.Test;
-
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.concurrent.ConcurrentHashMap;
-
 /**
  * @author jichuan.wang
  * @since 2018/11/10 16:06
@@ -24,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ShardingJdbcTest {
 
-    @Test
+   /* @Test
     public void test() throws Exception{
         Map<String, DataSource> dataSourceMap = new HashMap<>();
 
@@ -65,5 +49,5 @@ public class ShardingJdbcTest {
         }
 
 
-    }
+    }*/
 }
